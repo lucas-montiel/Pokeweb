@@ -1,0 +1,12 @@
+.button{
+    border-radius: 8%;
+    border: solid;
+    background-color: cornflowerblue;
+    text-decoration-color: black;
+    border-color: yellowgreen;
+}
+
+.align-right{
+    position: relative;
+    left: 1320px;
+}
