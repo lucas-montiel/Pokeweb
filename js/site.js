@@ -19,11 +19,17 @@ const getContinent = async (name) => {
   //  o
   //  let array = ['chavo', 'quico', 'chilindrina'];
   //  let [,,personaje3] = array;
-
-  console.log(conti);
+  document.getElementById("pais_name").innerHTML = conti.name;
+  document.getElementById("pais_flag").src = conti.flag;
+  document.getElementById("pais_region").innerHTML = conti.capital;
 };
 
-getContinent("arg");
+const $bt_search_pais = document.getElementById("bt_search_pais");
+$bt_search_pais.addEventListener("click", () => {
+  debugger;
+  const $input_pais = document.getElementById("input_pais");
+  getContinent($input_pais.value);
+});
 
 // //forma mas utilizadas para funciones
 // const hola = ()=> {
